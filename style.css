@@ -276,7 +276,7 @@
 }
 
 .main{
-    width: 100vw;
+    width: 100%;
 }
 
 .mainContent{
@@ -295,14 +295,14 @@
     justify-content: flex-start;
     align-items: center;
     background-color: #ff1010;
-    width: 100vw;
+    width: 100%;
     padding: 6vh;
 }
 
 .reseauxFooter{
     display: flex;
     flex-direction: row;
-    width:100vw;
+    width:100%;
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -402,7 +402,7 @@
     
     
     .text {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 1.8;
         margin-top: 3vh;
     }
@@ -413,7 +413,7 @@
         border-radius: 50px;
         padding: 0.6em 1.2em;
         color: #fff;
-        font-size: 30px;
+        font-size: 24px;
         margin-top: 3vh;
         box-shadow: 0px 5px 20px #7c0a0a;
     }
@@ -450,7 +450,7 @@
     }
     
     .main{
-        width: 100vw;
+        width: 100%;
     }
     
     .mainContent{
@@ -468,6 +468,10 @@
         text-align: center;
         line-height: 1.8;
         font-size: 20px;
+    }
+
+    .logoFooter{
+        width: 30%;
     }
     
     .reseauxTitle{
@@ -492,8 +496,9 @@
     .toggleMode{
         width: 5vw;
         height: 5vw;
-        top: 20px;
-        left: 20px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
         z-index: 10;
     }
 
@@ -534,32 +539,39 @@
 
     .navBar{
         position: absolute;
-        width: 100vw;
-        height: 10vh;
+        width: 100%;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        top:0;
+        flex-direction: column;
         z-index: 10;
     }
 
     .navBarLinks{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        gap:2vw;
-    }
-    
-    .navBarLogo{
-        width: 20vw;
+        width: 70vw;
+        margin: 0 auto;
+        border-radius: 500px;
+        height: 5vw;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 0px 20px;
     }
     
     .navBarA{
         color: #fff;
-        font-weight: 600;
         font-size: 20px;
+        height: 100%;
+        width: 100%;
+        border-radius: 50px;
+        transition: .2s ease-in-out;
+    }
+
+    .navBarA:hover{
+        color: #ff1010;
     }
 
     /** Common Styles **/
@@ -604,17 +616,17 @@
         padding: 0.6em 1.2em;
         color: #fff;
         font-size: 24px;
-        margin: 10% auto;
+        margin: 5% auto;
         box-shadow: 0px 5px 20px #7c0a0a;
     }
     
     .bigTitle{
-        font-size: 40px;
+        font-size: 50px;
         color: #ff1010;
         font-family: 'Utendo';
         letter-spacing: 2px;
         display: inline-block;
-        margin-top: 3vh;
+        margin-top: 16vh;
         position: relative;
     }
     .bigTitle::after{
@@ -640,7 +652,7 @@
     }
     
     .main{
-        width: 100vw;
+        width: 100%;
     }
     
     .mainContent{
@@ -659,14 +671,18 @@
         justify-content: flex-start;
         align-items: center;
         background-color: #ff1010;
-        width: 100vw;
+        width: 100%;
         padding: 6vh;
+    }
+
+    .logoFooter{
+        width: 30%;
     }
     
     .reseauxFooter{
         display: flex;
         flex-direction: row;
-        width:100vw;
+        width:100%;
         justify-content: center;
         align-items: center;
         gap: 40px;
@@ -711,27 +727,14 @@
 
 @media only screen and (min-width: 1200px) {
     .toggleMode{
-        width: 14vw;
-        height: 14vw;
-        border: none;
-        cursor: pointer;
-        position: absolute;
-        top: 20px;
-        left: 20px;
+        width: 4vw;
+        height: 4vw;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
         z-index: 10;
-        border-radius: 5px;
-        background-color: #1A1C1D;
-        box-shadow: 0px 0px 20px ;
-        padding: 0.7em;
     }
-    
-    .toggleMode img{
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-    }
-    
-    
+
     /** Animation Reveal **/
     
     .revealOne{
@@ -758,116 +761,52 @@
     
     
     .boxBurger{
-        width: 14vw;
-        height: 14vw;
-        border: none;
-        cursor: pointer;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 100;
-        border-radius: 5px;
-        background-color: #1A1C1D;
-        box-shadow: 0px 0px 20px ;
-    }
-    
-    
-    .containerLinesBurger{
-        width: 60%;
-        height: 60%;
-        position: absolute;
-        top:50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        pointer-events: none;
-    }
-    
-    .lineBurger{
-        border-radius: 50px;
-        width: 100%;
-        height: 10%;
-        background-color: #fff;
-        position: absolute;
-    }
-    
-    .lineBurger:nth-child(1){
-        top:0px;
-        left: 0px;
-        transform: rotate(0deg);
-        transition: transform 0.4s ease-in-out, top 0.4s ease-in-out;
-    }
-    
-    .lineBurger:nth-child(2){
-        top:50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 1;
-        transition: 0.2s 0.2s ease-in-out;
-    }
-    
-    .lineBurger:nth-child(3){
-        bottom:0px;
-        left:0px;
-        transform:rotate(0deg);
-        transition: transform 0.4s ease-in-out, bottom 0.4s  ease-in-out;
-    }
-    
-    .boxBurger.active{
-        background-color: #fff;
-    }
-    
-    .boxBurger.active .lineBurger{
-        background-color: #1A1C1D;
-    }
-    
-    .boxBurger.active .lineBurger:nth-child(1){
-        top:calc(50% - 5%);
-        transform: rotate(45deg) ;
-        transition: top 0.4s ease-in-out, left 0.4s ease-in-out, transform  0.4s ease-in-out;
-    }
-    
-    .boxBurger.active .lineBurger:nth-child(2){
-        opacity: 0;
-        transition: 0s ease-in-out;
-    
-    }
-    
-    .boxBurger.active .lineBurger:nth-child(3){
-        bottom:calc(50% - 5%);
-        transform: rotate(-45deg) ;
-        transition: top 0.4s 0.4s ease-in-out, left 0.4s ease-in-out, transform 0.4s ease-in-out;
-    }
+        display: none;
+    }  
     
     .sideNav {
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        left: 0;
-        top: -100%;
-        background-color: #000000;
-        transition: top 0.3s ease;
-        z-index: 99;
+        display: none;
     }
     
-    .burgerList {
+    /** Nav **/
+
+    .navBar{
+        position: absolute;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        z-index: 10;
+    }
+
+    .navBarLinks{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
-        gap: 8%;
+        width: 70vw;
+        margin: 0 auto;
+        border-radius: 500px;
+        height: 4vw;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 0px 20px;
+    }
+    
+    .navBarA{
+        color: #fff;
+        font-size: 20px;
         height: 100%;
+        width: 100%;
+        border-radius: 50px;
+        transition: .2s ease-in-out;
     }
-    
-    .burgerA {
-        font-size: 30px;
-        color: #ffffff;
+
+    .navBarA:hover{
+        color: #ff1010;
     }
-    
-    
-    .sideNav.active {
-        top: 0;
-    }
-    
+
     /** Common Styles **/
     
     .title{
@@ -898,9 +837,10 @@
     
     .text {
         color: #fff;
+        margin: 3vh auto 0 auto;
+        width: 90%;
         font-size: 20px;
         line-height: 1.8;
-        margin-top: 3vh;
     }
     
     .button {
@@ -910,17 +850,17 @@
         padding: 0.6em 1.2em;
         color: #fff;
         font-size: 24px;
-        margin: 10% auto;
+        margin: 4vh auto;
         box-shadow: 0px 5px 20px #7c0a0a;
     }
     
     .bigTitle{
-        font-size: 40px;
+        font-size: 60px;
         color: #ff1010;
         font-family: 'Utendo';
         letter-spacing: 2px;
         display: inline-block;
-        margin-top: 3vh;
+        margin-top: 18vh;
         position: relative;
     }
     .bigTitle::after{
@@ -946,11 +886,11 @@
     }
     
     .main{
-        width: 100vw;
+        width: 100%;
     }
     
     .mainContent{
-        width: 90vw;
+        width: 90%;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -962,33 +902,35 @@
     .footer{
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+        align-items:center;
+        justify-content: center;
         background-color: #ff1010;
-        width: 100vw;
-        padding: 6vh;
+        width: 100%;
+    }
+
+    .logoFooter{
+        width: 40%;
+    }
+        
+    .reseauxFooter a {
+        filter: drop-shadow(0px 0px 5px #000);
     }
     
-    .reseauxFooter{
+    .reseauxContentBigDiv{
         display: flex;
         flex-direction: row;
-        width:100vw;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        margin: 20px;
+        width: 80%;
+        justify-content: space-around;
+        align-items: flex-start;
     }
-    
-    .reseauxFooter a {
-        filter: drop-shadow(0px 0px 5px #000)
-    }
-    
+
     .reseauxContent{
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: flex-end;
         align-items: center;
-        margin-top: 20px;
+        margin-right: 2px solid #fff;
+
     }
     
     .reseauxText{
@@ -998,6 +940,8 @@
         font-size: 16px;
     }
     
+
+
     .reseauxTitle{
         color: #1A1C1D;
         font-size: 20px;

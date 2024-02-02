@@ -49,3 +49,91 @@
     text-align: center;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .formReserver{
+        margin-top: 0;
+        margin-bottom: 6vh;
+        width: 90%;
+        padding: 2em;
+    }
+    
+    .formReserverInput{
+        gap:2vh;
+        width: 90%;
+    }
+    
+    .formReserverInput input{
+        width: 80%;
+    }
+    
+    .formReserver .button{
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .formTitle{
+        font-weight: 100;
+        text-align: center;
+    }
+}
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .formReserver{
+        margin-top: 0;
+        margin-bottom: 6vh;
+        width: 70%;
+        padding: 2em;
+    }
+    
+    .formReserverInput{
+        gap:2vh;
+        width: 90%;
+    }
+    
+    .formReserverInput input{
+        width: 80%;
+    }
+    
+    .formReserver .button{
+        cursor: pointer;
+    }
+
+    .formTitle{
+        font-weight: 100;
+        text-align: center;
+    }
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+    .formReserver{
+        margin-top: 0;
+        margin-bottom: 6vh;
+        width: 70%;
+        padding: 2em;
+    }
+    
+    .formReserverInput{
+        gap:2vh;
+        width: 90%;
+    }
+    
+    .formReserverInput input{
+        width: 80%;
+    }
+    
+    .formReserver .button{
+        cursor: pointer;
+    }
+
+    .formTitle{
+        font-weight: 100;
+        text-align: center;
+    }
+}
+
+
+

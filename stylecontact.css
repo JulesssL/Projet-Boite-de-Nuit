@@ -99,3 +99,260 @@
     text-align: center;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contactDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5vh;
+        margin-bottom: 5vh;
+    }
+    
+    
+    .contactText {
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+    
+    .contactTitle{
+        font-family: 'Utendo';
+        font-size: 30px;
+        color: #ff1010;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+    
+    
+    
+    .formReserver{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3vh;
+        margin-bottom: 6vh;
+        gap:3vh;
+        width: 100%;
+        padding: 2em;
+        box-shadow: 0px 0px 20px ;
+    }
+    
+    .formReserverInput{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2vh;
+        width: 80vw;
+        padding: 0.5em;
+    }
+    
+    .formReserverInput input{
+        border: none;
+        font-size: 18px;
+        color: #8d8d8d;
+        text-align: left;
+        width: 80%;
+        color-scheme: dark;
+        margin: 0 auto;
+        padding: 0.5em 0.7em;
+        border-bottom: 2px solid #7c0a0a;
+    }
+    
+    .formReserverInput input:focus{
+        outline: none;
+        border-bottom: 2px solid #ff1010;
+    }
+    
+    .formReserverInput input::placeholder{
+        color:#8d8d8d;
+    }
+    
+    .formReserverInput textarea{
+        border: none;
+        font-size: 18px;
+        color: #8d8d8d;
+        text-align: left;
+        width: 80%;
+        color-scheme: dark;
+        margin: 0 auto;
+        padding: 0.5em 0.7em;
+        border: 2px solid #7c0a0a;
+    }
+    
+    .formReserverInput textarea:focus{
+        outline: none;
+        border-bottom: 2px solid #ff1010;
+    }
+    
+    .formReserverInput textarea::placeholder{
+        color:#8d8d8d;
+    }
+    
+    .formTitle{
+        color: #fff;
+        font-weight: 100;
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .contactDiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+    }
+    
+    
+    .contactText {
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+    
+    .contactTitle{
+        font-family: 'Utendo';
+        font-size: 30px;
+        color: #ff1010;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+    
+    
+    
+    .formReserver{
+        margin-top: 0;
+        margin-bottom: 6vh;
+        width: 70%;
+        padding: 2em;
+    }
+    
+    .formReserverInput{
+        gap:2vh;
+        width: 90%;
+    }
+    
+    .formReserverInput input{
+        width: 80%;
+    }
+    
+    .formReserver .button{
+        cursor: pointer;
+    }
+
+    .formTitle{
+        font-weight: 100;
+        text-align: center;
+    }
+    
+    .formReserverInput textarea{
+        border: none;
+        font-size: 18px;
+        color: #8d8d8d;
+        text-align: left;
+        width: 80%;
+        color-scheme: dark;
+        margin: 0 auto;
+        padding: 0.5em 0.7em;
+        border: 2px solid #7c0a0a;
+    }
+    
+    .formReserverInput textarea:focus{
+        outline: none;
+        border-bottom: 2px solid #ff1010;
+    }
+    
+    .formReserverInput textarea::placeholder{
+        color:#8d8d8d;
+    }
+}
+
+
+@media only screen and (min-width: 1200px){
+    .contactDiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+    }
+    
+    
+    .contactText {
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+    
+    .contactTitle{
+        font-family: 'Utendo';
+        font-size: 30px;
+        color: #ff1010;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+    
+    
+    
+    .formReserver{
+        margin-top: 0;
+        margin-bottom: 6vh;
+        width: 70%;
+        padding: 2em;
+    }
+    
+    .formReserverInput{
+        gap:2vh;
+        width: 90%;
+    }
+    
+    .formReserverInput input{
+        width: 80%;
+    }
+    
+    .formReserver .button{
+        cursor: pointer;
+    }
+
+    .formTitle{
+        font-weight: 100;
+        text-align: center;
+    }
+    
+    .formReserverInput textarea{
+        border: none;
+        font-size: 18px;
+        color: #8d8d8d;
+        text-align: left;
+        width: 80%;
+        color-scheme: dark;
+        margin: 0 auto;
+        padding: 0.5em 0.7em;
+        border: 2px solid #7c0a0a;
+    }
+    
+    .formReserverInput textarea:focus{
+        outline: none;
+        border-bottom: 2px solid #ff1010;
+    }
+    
+    .formReserverInput textarea::placeholder{
+        color:#8d8d8d;
+    }
+    
+}

@@ -25,7 +25,7 @@
             </div>
         </button>
 
-        <div id="mySideNav" class="sideNav">
+        <nav id="mySideNav" class="sideNav">
             <ul class="burgerList">
                 <li><a class="burgerA" href="index.html">Accueil</li></a>
                 <li><a class="burgerA" href="agenda.html">Agenda</a></li>
@@ -33,32 +33,43 @@
                 <li><a class="burgerA" href="reserver.html">Réserver</a></li>
                 <li><a class="burgerA" href="contact.html">Contact</a></li>
             </ul>
-        </div>
+        </nav>
+
+        <nav class="navBar">
+            <div class="navBarLinks backgroundColor">
+                <li><a class="navBarA text" href="index.html">Accueil</li></a>
+                <li><a class="navBarA text" href="agenda.html">Agenda</a></li>
+                <li><a class="navBarA text" href="galerie.html">Galerie</a></li>
+                <li><a class="navBarA text" href="reserver.html">Réserver</a></li>
+                <li><a class="navBarA text" href="contact.html">Contact</a></li>
+            </div>
+        </nav>
     </header>
 
     <main class="main backgroundColor">
         <div class="mainContent">
             <h1 class="bigTitle">&nbsp</h1>
-            <p class="text">Vous pouvez ici réserver une table pour préparer au mieux votre soirée.</p>
-
             <h2 class="title">INFORMATIONS</h2>
-            <p class="text">Réservation possible du vendredi au dimanche de 22h à 5h.</p>
+
+            <p class="text">Ici, nous vous offrons bien plus qu'une simple soirée en boîte de nuit ; c'est une expérience exceptionnelle que nous vous proposons de vivre. En réservant votre table dès maintenant, vous assurez votre accès privilégié à une atmosphère vibrante et électrisante, épicentre des nuits les plus mémorables de la métropole lilloise. Notre service de réservation garantit non seulement votre place dans l'effervescence de notre piste de danse, mais aussi un traitement VIP exclusif avec un personnel dédié prêt à rendre votre soirée inoubliable. Plongez dans l'univers enivrant du Lunar Pulse en réservant votre table dès maintenant. Laissez-vous emporter par la musique entraînante, les lumières étincelantes et l'ambiance incomparable qui font de chaque nuit passée au Lunar Pulse une expérience à part. Préparez-vous à vivre une soirée que vous n'oublierez pas de sitôt – votre invitation exclusive au cœur de la vie nocturne lilloise vous attend.</p>
+
+            <h2 class="title">FORMULAIRE</h2>
 
             <form action="" class="formReserver">
                 <div class="formReserverInput">
-                    <h3 class="formTitle">Date de réservation</h3>
+                    <h3 class="formTitle text">Date de réservation</h3>
                     <input type="date" class="backgroundColor" required>
                 </div>
                 <div class="formReserverInput">
-                    <h3 class="formTitle">Horaire </h3>
+                    <h3 class="formTitle text">Horaire </h3>
                     <input type="time" class="backgroundColor" required>
                 </div>
                 <div class="formReserverInput">
-                    <h3 class="formTitle">Nombre de personnes (10 max)</h3>
+                    <h3 class="formTitle text">Nombre de personnes (10 max)</h3>
                     <input type="number" min="1" max="10" placeholder="Entre 1 et 10" class="backgroundColor" required>
                 </div>
                 <div class="formReserverInput">
-                    <h3 class="formTitle">Vos Informations</h3>
+                    <h3 class="formTitle text">Vos Informations</h3>
                     <input type="text" placeholder="Nom / Prénom" class="backgroundColor" required>
                     <input type="tel" placeholder="Téléphone" class="backgroundColor" required>
                     <input type="mail" placeholder="E-mail" class="backgroundColor" required>
@@ -73,22 +84,26 @@
     <footer class="footer">
         <img src="ressources/design/logoNameWhite.png" alt="Notre logo" class="logoFooter" width="80%">
         <div class="reseauxFooter">
-            <a href="https://facebook.com"><img src="ressources/img/facebook.png" alt="Voir notre Facebook" width="60px"></a>
-            <a href="https://instagram.com"><img src="ressources/img/instagram.png" alt="Voir notre instagram" width="60px"></a>
+            <a href="https://facebook.com"><img src="ressources/img/facebook.png" alt="Voir notre Facebook"
+                    width="60px"></a>
+            <a href="https://instagram.com"><img src="ressources/img/instagram.png" alt="Voir notre instagram"
+                    width="60px"></a>
         </div>
-        <div class="reseauxContent">
-            <h3 class="reseauxTitle">Adresse</h3>
-            <p class="reseauxText">57 rue Pierre Mauroy, 59 000 Lille, <br>France</p>
-            <a href="mentions.html" class="mentionsButton">Mentions Légales</a>
-        </div>
-        <div class="reseauxContent">
-            <h3 class="reseauxTitle">Contact</h3>
-            <p class="reseauxText">Soirée Etudiante & Booking : <br> 01 23 45 67 89</p><br>
-            <p class="reseauxText">Soirée Etudiante & Booking : <br> 01 23 45 67 89</p>
-        </div>
-        <div class="reseauxContent">
-            <h3 class="reseauxTitle">Horaire</h3>
-            <p class="reseauxText">Horaires et jours d'ouvertures : <br>Du jeudi au dimanche <br> 22h à 7h</p>
+        <div class="reseauxContentBigDiv">
+            <div class="reseauxContent">
+                <h3 class="reseauxTitle">Adresse</h3>
+                <p class="reseauxText">57 rue Pierre Mauroy, 59 000 Lille, <br>France</p>
+                <a href="mentions.html" class="mentionsButton">Mentions Légales</a>
+            </div>
+            <div class="reseauxContent">
+                <h3 class="reseauxTitle">Contact</h3>
+                <p class="reseauxText">Soirée Etudiante & Booking : <br> 01 23 45 67 89</p><br>
+                <p class="reseauxText">Soirée Etudiante & Booking : <br> 01 23 45 67 89</p>
+            </div>
+            <div class="reseauxContent">
+                <h3 class="reseauxTitle">Horaire</h3>
+                <p class="reseauxText">Horaires et jours d'ouvertures : <br>Du jeudi au dimanche <br> 22h à 7h</p>
+            </div>
         </div>
     </footer>
 
