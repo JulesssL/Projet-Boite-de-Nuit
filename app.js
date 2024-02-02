@@ -8,6 +8,12 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max + 1);
 }
 
+
+// Loader
+
+const loader = document.querySelector('.loader')
+
+
 // Light Mode , Dark Mode
 
 function toggleMode () {
@@ -111,10 +117,13 @@ function typewritter(word, index){
 // Actions
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Loader
+    window.addEventListener('load', () => {
+        loader.classList.add('fondu-out')
+    })
+
     if (document.title == "Accueil - Lunar Pulse"){
-
         // Home Animation
-
         setInterval(()=>{
             if (sliderMenuActiveNumber == 2){
                 sliderMenuActiveNumber = 0
