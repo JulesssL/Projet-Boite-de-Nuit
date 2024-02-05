@@ -26,7 +26,7 @@ function toggleMode () {
             element.style.color = "#000"
         })
         modeColor.forEach( function (element) { 
-            element.style.backgroundColor = "#CCDBDC"
+            element.style.backgroundColor = "#FFC4C4"
         })
         modeButtonImg.src = 'ressources/img/moon.png'
     }
