@@ -164,13 +164,7 @@
 
 .revealOne{
     opacity: 0;
-    transform: translateX(-100%);
-    z-index: 1;
-}
-
-.revealTwo{
-    opacity: 0;
-    transform: translateX(100%);
+    transform: translateY(-100%);
     z-index: 1;
 }
 
@@ -392,7 +386,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: #ff1010;
+    background-color: #900000;
     width: 100%;
     padding: 6vh;
 }
@@ -427,7 +421,7 @@
 }
 
 .reseauxTitle{
-    color: #1A1C1D;
+    color: #000000;
     font-size: 20px;
 }
 
@@ -570,9 +564,13 @@
     .logoFooter{
         width: 30%;
     }
+
+    .reseauxContent{
+        background-color: #900000;
+    }
     
     .reseauxTitle{
-        color: #1A1C1D;
+        color: #000000;
         font-size: 26px;
     }
     
@@ -613,7 +611,7 @@
     
     .revealTwo{
         opacity: 0;
-        transform: translateX(100%);
+        transform: translateX(0%);
         z-index: 1;
     }
     
@@ -768,7 +766,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        background-color: #ff1010;
+        background-color: #900000;
         width: 100%;
         padding: 6vh;
     }
@@ -807,7 +805,7 @@
     }
     
     .reseauxTitle{
-        color: #1A1C1D;
+        color: #000;
         font-size: 20px;
     }
     
@@ -1003,7 +1001,7 @@
         flex-direction: column;
         align-items:center;
         justify-content: center;
-        background-color: #ff1010;
+        background-color: #900000;
         width: 100%;
     }
 
@@ -1042,7 +1040,7 @@
 
 
     .reseauxTitle{
-        color: #1A1C1D;
+        color: #000000;
         font-size: 20px;
     }
     

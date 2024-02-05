@@ -67,21 +67,19 @@ const options = {
     threshold: ratio,
 }
 
-const handleIntersect = function (entries, obs) {
+const handleIntersectOne = function (entries, obs) {
     entries.forEach(function (entry) {
         if (entry.intersectionRatio > ratio) {
             entry.target.classList.add('revealVisible')
             obs.unobserve(entry.target)
-            print('visible')
         }
     })
 }
 
-const obs = new IntersectionObserver(handleIntersect, options)
+const obsOne = new IntersectionObserver(handleIntersectOne, options)
 revealOneTargets = document.querySelectorAll('.revealOne')
 revealOneTargets.forEach( function (target) {
-    obs.observe(target)
-    print(target)
+    obsOne.observe(target)
 })
 
 // Menu Burger
